@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36327.8
+VisualStudioVersion = 17.14.36327.8 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nerdflix", "Nerdflix\Nerdflix.csproj", "{BBF1E97D-1718-4409-8D87-55F194DEB31C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibNerdFlix", "LibNerdFlix\LibNerdFlix\LibNerdFlix.csproj", "{F3CB700B-F044-46DB-A1F8-08A57EEBD2F5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibNerdFlix", "LibNerdFlix\LibNerdFlix.csproj", "{F3CB700B-F044-46DB-A1F8-08A57EEBD2F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BBF1E97D-1718-4409-8D87-55F194DEB31C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BBF1E97D-1718-4409-8D87-55F194DEB31C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BBF1E97D-1718-4409-8D87-55F194DEB31C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BBF1E97D-1718-4409-8D87-55F194DEB31C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F3CB700B-F044-46DB-A1F8-08A57EEBD2F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F3CB700B-F044-46DB-A1F8-08A57EEBD2F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3CB700B-F044-46DB-A1F8-08A57EEBD2F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -26,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {24B9B3FA-81D8-48B8-A055-E6DCD19E1A51}
+		SolutionGuid = {13F06902-0CA2-4BED-B81D-72D021847901}
 	EndGlobalSection
 EndGlobal
