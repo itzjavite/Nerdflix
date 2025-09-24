@@ -16,5 +16,12 @@ namespace Nerdflix
         {
             InitializeComponent();
         }
+
+        private void Form1_Activated(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.ShowDialog();
+            Application.Exit();
+        }
     }
 }

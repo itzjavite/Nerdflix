@@ -34,6 +34,10 @@
             this.btnFilmes = new System.Windows.Forms.Button();
             this.btnLivros = new System.Windows.Forms.Button();
             this.btnPerfil = new System.Windows.Forms.Button();
+            this.pibMenuLogo = new System.Windows.Forms.PictureBox();
+            this.pibMenuLogo2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pibMenuLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibMenuLogo2)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTituloMenu
@@ -59,6 +63,7 @@
             this.btnJogos.TabIndex = 1;
             this.btnJogos.Text = "JOGOS";
             this.btnJogos.UseVisualStyleBackColor = false;
+            this.btnJogos.Click += new System.EventHandler(this.btnJogos_Click);
             // 
             // btnFilmes
             // 
@@ -72,6 +77,7 @@
             this.btnFilmes.TabIndex = 2;
             this.btnFilmes.Text = "FILMES";
             this.btnFilmes.UseVisualStyleBackColor = false;
+            this.btnFilmes.Click += new System.EventHandler(this.btnFilmes_Click);
             // 
             // btnLivros
             // 
@@ -85,6 +91,7 @@
             this.btnLivros.TabIndex = 3;
             this.btnLivros.Text = "LIVROS";
             this.btnLivros.UseVisualStyleBackColor = false;
+            this.btnLivros.Click += new System.EventHandler(this.btnLivros_Click);
             // 
             // btnPerfil
             // 
@@ -97,6 +104,27 @@
             this.btnPerfil.TabIndex = 4;
             this.btnPerfil.Text = "PERFIL";
             this.btnPerfil.UseVisualStyleBackColor = false;
+            this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
+            // 
+            // pibMenuLogo
+            // 
+            this.pibMenuLogo.Image = global::Nerdflix.Properties.Resources.ribbon;
+            this.pibMenuLogo.Location = new System.Drawing.Point(12, 21);
+            this.pibMenuLogo.Name = "pibMenuLogo";
+            this.pibMenuLogo.Size = new System.Drawing.Size(67, 58);
+            this.pibMenuLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pibMenuLogo.TabIndex = 5;
+            this.pibMenuLogo.TabStop = false;
+            // 
+            // pibMenuLogo2
+            // 
+            this.pibMenuLogo2.Image = global::Nerdflix.Properties.Resources.ribbon;
+            this.pibMenuLogo2.Location = new System.Drawing.Point(721, 21);
+            this.pibMenuLogo2.Name = "pibMenuLogo2";
+            this.pibMenuLogo2.Size = new System.Drawing.Size(67, 58);
+            this.pibMenuLogo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pibMenuLogo2.TabIndex = 6;
+            this.pibMenuLogo2.TabStop = false;
             // 
             // Menu
             // 
@@ -104,6 +132,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pibMenuLogo2);
+            this.Controls.Add(this.pibMenuLogo);
             this.Controls.Add(this.btnPerfil);
             this.Controls.Add(this.btnLivros);
             this.Controls.Add(this.btnFilmes);
@@ -112,6 +142,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Menu";
             this.Text = "Menu";
+            ((System.ComponentModel.ISupportInitialize)(this.pibMenuLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibMenuLogo2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,5 +156,7 @@
         private System.Windows.Forms.Button btnFilmes;
         private System.Windows.Forms.Button btnLivros;
         private System.Windows.Forms.Button btnPerfil;
+        private System.Windows.Forms.PictureBox pibMenuLogo;
+        private System.Windows.Forms.PictureBox pibMenuLogo2;
     }
 }

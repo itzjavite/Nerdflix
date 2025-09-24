@@ -11,11 +11,11 @@ namespace Nerdflix
     public class ConexaoBD
     {
         // Nas linhas abaixo você poderá mudar as informações da conexão com o bd:
-        private const string SERVER = "localhost", // ip/domínio do servidor
+        private const string SERVER = "10.141.47.42", // ip/domínio do servidor
                              PORT = "49170",
                              DATABASE = "nerdflix",
-                             UID = "root",
-                             PWD = "";
+                             UID = "camila",
+                             PWD = "camila";
         /*
         IMPORTANTE!
         Ao enviar ao GitHub ou algum diretório público, altere as informações acima ou

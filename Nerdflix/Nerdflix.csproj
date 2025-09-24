@@ -104,7 +104,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConexaoBD.cs" />
     <Compile Include="Filmes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +204,9 @@
       <Project>{f3cb700b-f044-46db-a1f8-08a57eebd2f5}</Project>
       <Name>LibNerdFlix</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ribbon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

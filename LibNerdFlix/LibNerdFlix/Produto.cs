@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace LibNerdFlix
 {
-    internal class Produto
+    public class Produto
     {
         public int Id { get; set; }
         public string Titulo { get; set; }
@@ -18,9 +18,35 @@ namespace LibNerdFlix
         public int IdCategoria { get; set; }
 
 
-        public DataTable Listar()
+        public DataTable Listar1()
         {
-            string comando = "SELECT * FROM produtos";
+            string comando = "SELECT * FROM view_jogos";
+            ConexaoBD conexaoBD = new ConexaoBD();
+            MySqlConnection con = conexaoBD.ObterConexao();
+            MySqlCommand cmd = new MySqlCommand(comando, con);
+            cmd.Prepare();
+            DataTable tabela = new DataTable();
+            tabela.Load(cmd.ExecuteReader());
+            conexaoBD.Desconectar(con);
+            return tabela;
+        }
+
+        public DataTable Listar2()
+        {
+            string comando = "SELECT * FROM view_filmes";
+            ConexaoBD conexaoBD = new ConexaoBD();
+            MySqlConnection con = conexaoBD.ObterConexao();
+            MySqlCommand cmd = new MySqlCommand(comando, con);
+            cmd.Prepare();
+            DataTable tabela = new DataTable();
+            tabela.Load(cmd.ExecuteReader());
+            conexaoBD.Desconectar(con);
+            return tabela;
+        }
+
+        public DataTable Listar3()
+        {
+            string comando = "SELECT * FROM view_livros";
             ConexaoBD conexaoBD = new ConexaoBD();
             MySqlConnection con = conexaoBD.ObterConexao();
             MySqlCommand cmd = new MySqlCommand(comando, con);
