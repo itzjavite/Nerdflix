@@ -43,7 +43,7 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(276, 182);
+            this.lblEmail.Location = new System.Drawing.Point(137, 186);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(88, 29);
             this.lblEmail.TabIndex = 0;
@@ -52,25 +52,25 @@
             // txbEmail
             // 
             this.txbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbEmail.Location = new System.Drawing.Point(370, 179);
+            this.txbEmail.Location = new System.Drawing.Point(231, 183);
             this.txbEmail.Name = "txbEmail";
-            this.txbEmail.Size = new System.Drawing.Size(166, 35);
+            this.txbEmail.Size = new System.Drawing.Size(378, 35);
             this.txbEmail.TabIndex = 1;
             // 
             // txbSenha
             // 
             this.txbSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbSenha.Location = new System.Drawing.Point(370, 255);
+            this.txbSenha.Location = new System.Drawing.Point(231, 259);
             this.txbSenha.Name = "txbSenha";
             this.txbSenha.PasswordChar = '•';
-            this.txbSenha.Size = new System.Drawing.Size(166, 35);
+            this.txbSenha.Size = new System.Drawing.Size(378, 35);
             this.txbSenha.TabIndex = 3;
             // 
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
             this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.Location = new System.Drawing.Point(276, 258);
+            this.lblSenha.Location = new System.Drawing.Point(137, 262);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(88, 29);
             this.lblSenha.TabIndex = 2;
@@ -82,7 +82,7 @@
             this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEntrar.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrar.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnEntrar.Location = new System.Drawing.Point(273, 323);
+            this.btnEntrar.Location = new System.Drawing.Point(275, 335);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(263, 36);
             this.btnEntrar.TabIndex = 4;

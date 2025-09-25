@@ -29,45 +29,39 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Filmes));
-            this.grbApagarFilmes = new System.Windows.Forms.GroupBox();
+            this.grbApagar = new System.Windows.Forms.GroupBox();
             this.btnApagar = new System.Windows.Forms.Button();
             this.cmbNotaApagar = new System.Windows.Forms.ComboBox();
             this.lblNotaApagarF = new System.Windows.Forms.Label();
-            this.cmbCategoriaApagar = new System.Windows.Forms.ComboBox();
-            this.lblCategoriaApagarF = new System.Windows.Forms.Label();
             this.txbTituloApagar = new System.Windows.Forms.TextBox();
             this.lblTituloApagarF = new System.Windows.Forms.Label();
             this.grbCadastrarFilmes = new System.Windows.Forms.GroupBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.cmbNotaCadastrar = new System.Windows.Forms.ComboBox();
             this.lblNotaCadastrarF = new System.Windows.Forms.Label();
-            this.cmbCategoriaCadastrar = new System.Windows.Forms.ComboBox();
-            this.lblCategoriaF = new System.Windows.Forms.Label();
             this.txbTituloCadastrar = new System.Windows.Forms.TextBox();
             this.lblTituloCadastrarF = new System.Windows.Forms.Label();
             this.lblTituloFilmes = new System.Windows.Forms.Label();
             this.dgvFilmes = new System.Windows.Forms.DataGridView();
-            this.grbApagarFilmes.SuspendLayout();
+            this.grbApagar.SuspendLayout();
             this.grbCadastrarFilmes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFilmes)).BeginInit();
             this.SuspendLayout();
             // 
-            // grbApagarFilmes
+            // grbApagar
             // 
-            this.grbApagarFilmes.Controls.Add(this.btnApagar);
-            this.grbApagarFilmes.Controls.Add(this.cmbNotaApagar);
-            this.grbApagarFilmes.Controls.Add(this.lblNotaApagarF);
-            this.grbApagarFilmes.Controls.Add(this.cmbCategoriaApagar);
-            this.grbApagarFilmes.Controls.Add(this.lblCategoriaApagarF);
-            this.grbApagarFilmes.Controls.Add(this.txbTituloApagar);
-            this.grbApagarFilmes.Controls.Add(this.lblTituloApagarF);
-            this.grbApagarFilmes.ForeColor = System.Drawing.Color.White;
-            this.grbApagarFilmes.Location = new System.Drawing.Point(653, 354);
-            this.grbApagarFilmes.Name = "grbApagarFilmes";
-            this.grbApagarFilmes.Size = new System.Drawing.Size(404, 249);
-            this.grbApagarFilmes.TabIndex = 7;
-            this.grbApagarFilmes.TabStop = false;
-            this.grbApagarFilmes.Text = "Apagar";
+            this.grbApagar.Controls.Add(this.btnApagar);
+            this.grbApagar.Controls.Add(this.cmbNotaApagar);
+            this.grbApagar.Controls.Add(this.lblNotaApagarF);
+            this.grbApagar.Controls.Add(this.txbTituloApagar);
+            this.grbApagar.Controls.Add(this.lblTituloApagarF);
+            this.grbApagar.ForeColor = System.Drawing.Color.White;
+            this.grbApagar.Location = new System.Drawing.Point(653, 354);
+            this.grbApagar.Name = "grbApagar";
+            this.grbApagar.Size = new System.Drawing.Size(404, 249);
+            this.grbApagar.TabIndex = 7;
+            this.grbApagar.TabStop = false;
+            this.grbApagar.Text = "Apagar";
             // 
             // btnApagar
             // 
@@ -80,60 +74,42 @@
             this.btnApagar.TabIndex = 6;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = false;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click_1);
             // 
             // cmbNotaApagar
             // 
-            this.cmbNotaApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbNotaApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNotaApagar.FormattingEnabled = true;
-            this.cmbNotaApagar.Location = new System.Drawing.Point(124, 131);
+            this.cmbNotaApagar.Location = new System.Drawing.Point(104, 112);
             this.cmbNotaApagar.Name = "cmbNotaApagar";
-            this.cmbNotaApagar.Size = new System.Drawing.Size(232, 28);
+            this.cmbNotaApagar.Size = new System.Drawing.Size(252, 50);
             this.cmbNotaApagar.TabIndex = 5;
             // 
             // lblNotaApagarF
             // 
             this.lblNotaApagarF.AutoSize = true;
-            this.lblNotaApagarF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNotaApagarF.Location = new System.Drawing.Point(67, 134);
+            this.lblNotaApagarF.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotaApagarF.Location = new System.Drawing.Point(35, 130);
             this.lblNotaApagarF.Name = "lblNotaApagarF";
-            this.lblNotaApagarF.Size = new System.Drawing.Size(47, 20);
+            this.lblNotaApagarF.Size = new System.Drawing.Size(63, 25);
             this.lblNotaApagarF.TabIndex = 4;
             this.lblNotaApagarF.Text = "Nota:";
-            // 
-            // cmbCategoriaApagar
-            // 
-            this.cmbCategoriaApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbCategoriaApagar.FormattingEnabled = true;
-            this.cmbCategoriaApagar.Location = new System.Drawing.Point(124, 77);
-            this.cmbCategoriaApagar.Name = "cmbCategoriaApagar";
-            this.cmbCategoriaApagar.Size = new System.Drawing.Size(232, 28);
-            this.cmbCategoriaApagar.TabIndex = 3;
-            // 
-            // lblCategoriaApagarF
-            // 
-            this.lblCategoriaApagarF.AutoSize = true;
-            this.lblCategoriaApagarF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoriaApagarF.Location = new System.Drawing.Point(36, 80);
-            this.lblCategoriaApagarF.Name = "lblCategoriaApagarF";
-            this.lblCategoriaApagarF.Size = new System.Drawing.Size(82, 20);
-            this.lblCategoriaApagarF.TabIndex = 2;
-            this.lblCategoriaApagarF.Text = "Categoria:";
             // 
             // txbTituloApagar
             // 
             this.txbTituloApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbTituloApagar.Location = new System.Drawing.Point(124, 30);
+            this.txbTituloApagar.Location = new System.Drawing.Point(104, 56);
             this.txbTituloApagar.Name = "txbTituloApagar";
-            this.txbTituloApagar.Size = new System.Drawing.Size(232, 26);
+            this.txbTituloApagar.Size = new System.Drawing.Size(252, 26);
             this.txbTituloApagar.TabIndex = 1;
             // 
             // lblTituloApagarF
             // 
             this.lblTituloApagarF.AutoSize = true;
-            this.lblTituloApagarF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTituloApagarF.Location = new System.Drawing.Point(67, 33);
+            this.lblTituloApagarF.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloApagarF.Location = new System.Drawing.Point(27, 59);
             this.lblTituloApagarF.Name = "lblTituloApagarF";
-            this.lblTituloApagarF.Size = new System.Drawing.Size(51, 20);
+            this.lblTituloApagarF.Size = new System.Drawing.Size(71, 25);
             this.lblTituloApagarF.TabIndex = 0;
             this.lblTituloApagarF.Text = "Título:";
             // 
@@ -142,8 +118,6 @@
             this.grbCadastrarFilmes.Controls.Add(this.btnCadastrar);
             this.grbCadastrarFilmes.Controls.Add(this.cmbNotaCadastrar);
             this.grbCadastrarFilmes.Controls.Add(this.lblNotaCadastrarF);
-            this.grbCadastrarFilmes.Controls.Add(this.cmbCategoriaCadastrar);
-            this.grbCadastrarFilmes.Controls.Add(this.lblCategoriaF);
             this.grbCadastrarFilmes.Controls.Add(this.txbTituloCadastrar);
             this.grbCadastrarFilmes.Controls.Add(this.lblTituloCadastrarF);
             this.grbCadastrarFilmes.ForeColor = System.Drawing.Color.White;
@@ -165,60 +139,48 @@
             this.btnCadastrar.TabIndex = 6;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // cmbNotaCadastrar
             // 
-            this.cmbNotaCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbNotaCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNotaCadastrar.FormattingEnabled = true;
-            this.cmbNotaCadastrar.Location = new System.Drawing.Point(124, 131);
+            this.cmbNotaCadastrar.Items.AddRange(new object[] {
+            "⭐",
+            "⭐⭐",
+            "⭐⭐⭐",
+            "⭐⭐⭐⭐",
+            "⭐⭐⭐⭐⭐"});
+            this.cmbNotaCadastrar.Location = new System.Drawing.Point(112, 112);
             this.cmbNotaCadastrar.Name = "cmbNotaCadastrar";
-            this.cmbNotaCadastrar.Size = new System.Drawing.Size(232, 28);
+            this.cmbNotaCadastrar.Size = new System.Drawing.Size(244, 50);
             this.cmbNotaCadastrar.TabIndex = 5;
             // 
             // lblNotaCadastrarF
             // 
             this.lblNotaCadastrarF.AutoSize = true;
-            this.lblNotaCadastrarF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNotaCadastrarF.Location = new System.Drawing.Point(67, 134);
+            this.lblNotaCadastrarF.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotaCadastrarF.Location = new System.Drawing.Point(35, 129);
             this.lblNotaCadastrarF.Name = "lblNotaCadastrarF";
-            this.lblNotaCadastrarF.Size = new System.Drawing.Size(47, 20);
+            this.lblNotaCadastrarF.Size = new System.Drawing.Size(63, 25);
             this.lblNotaCadastrarF.TabIndex = 4;
             this.lblNotaCadastrarF.Text = "Nota:";
-            // 
-            // cmbCategoriaCadastrar
-            // 
-            this.cmbCategoriaCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbCategoriaCadastrar.FormattingEnabled = true;
-            this.cmbCategoriaCadastrar.Location = new System.Drawing.Point(124, 77);
-            this.cmbCategoriaCadastrar.Name = "cmbCategoriaCadastrar";
-            this.cmbCategoriaCadastrar.Size = new System.Drawing.Size(232, 28);
-            this.cmbCategoriaCadastrar.TabIndex = 3;
-            // 
-            // lblCategoriaF
-            // 
-            this.lblCategoriaF.AutoSize = true;
-            this.lblCategoriaF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoriaF.Location = new System.Drawing.Point(36, 80);
-            this.lblCategoriaF.Name = "lblCategoriaF";
-            this.lblCategoriaF.Size = new System.Drawing.Size(82, 20);
-            this.lblCategoriaF.TabIndex = 2;
-            this.lblCategoriaF.Text = "Categoria:";
             // 
             // txbTituloCadastrar
             // 
             this.txbTituloCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbTituloCadastrar.Location = new System.Drawing.Point(124, 30);
+            this.txbTituloCadastrar.Location = new System.Drawing.Point(112, 58);
             this.txbTituloCadastrar.Name = "txbTituloCadastrar";
-            this.txbTituloCadastrar.Size = new System.Drawing.Size(232, 26);
+            this.txbTituloCadastrar.Size = new System.Drawing.Size(244, 26);
             this.txbTituloCadastrar.TabIndex = 1;
             // 
             // lblTituloCadastrarF
             // 
             this.lblTituloCadastrarF.AutoSize = true;
-            this.lblTituloCadastrarF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTituloCadastrarF.Location = new System.Drawing.Point(67, 33);
+            this.lblTituloCadastrarF.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloCadastrarF.Location = new System.Drawing.Point(35, 59);
             this.lblTituloCadastrarF.Name = "lblTituloCadastrarF";
-            this.lblTituloCadastrarF.Size = new System.Drawing.Size(51, 20);
+            this.lblTituloCadastrarF.Size = new System.Drawing.Size(71, 25);
             this.lblTituloCadastrarF.TabIndex = 0;
             this.lblTituloCadastrarF.Text = "Título:";
             // 
@@ -249,15 +211,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1142, 625);
-            this.Controls.Add(this.grbApagarFilmes);
+            this.Controls.Add(this.grbApagar);
             this.Controls.Add(this.grbCadastrarFilmes);
             this.Controls.Add(this.lblTituloFilmes);
             this.Controls.Add(this.dgvFilmes);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimizeBox = false;
             this.Name = "Filmes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Filmes";
-            this.grbApagarFilmes.ResumeLayout(false);
-            this.grbApagarFilmes.PerformLayout();
+            this.grbApagar.ResumeLayout(false);
+            this.grbApagar.PerformLayout();
             this.grbCadastrarFilmes.ResumeLayout(false);
             this.grbCadastrarFilmes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFilmes)).EndInit();
@@ -268,20 +232,16 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox grbApagarFilmes;
+        private System.Windows.Forms.GroupBox grbApagar;
         private System.Windows.Forms.Button btnApagar;
         private System.Windows.Forms.ComboBox cmbNotaApagar;
         private System.Windows.Forms.Label lblNotaApagarF;
-        private System.Windows.Forms.ComboBox cmbCategoriaApagar;
-        private System.Windows.Forms.Label lblCategoriaApagarF;
         private System.Windows.Forms.TextBox txbTituloApagar;
         private System.Windows.Forms.Label lblTituloApagarF;
         private System.Windows.Forms.GroupBox grbCadastrarFilmes;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.ComboBox cmbNotaCadastrar;
         private System.Windows.Forms.Label lblNotaCadastrarF;
-        private System.Windows.Forms.ComboBox cmbCategoriaCadastrar;
-        private System.Windows.Forms.Label lblCategoriaF;
         private System.Windows.Forms.TextBox txbTituloCadastrar;
         private System.Windows.Forms.Label lblTituloCadastrarF;
         private System.Windows.Forms.Label lblTituloFilmes;

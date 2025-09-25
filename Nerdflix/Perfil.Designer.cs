@@ -31,22 +31,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Perfil));
             this.grbApagarPerfil = new System.Windows.Forms.GroupBox();
             this.btnApagar = new System.Windows.Forms.Button();
-            this.cmbNotaApagar = new System.Windows.Forms.ComboBox();
             this.lblSenhaApagarP = new System.Windows.Forms.Label();
-            this.cmbEmailApagar = new System.Windows.Forms.ComboBox();
             this.lblEmailApagarP = new System.Windows.Forms.Label();
             this.txbNomeApagar = new System.Windows.Forms.TextBox();
             this.lblNomeApagarP = new System.Windows.Forms.Label();
             this.grbEditarPerfil = new System.Windows.Forms.GroupBox();
             this.btnEditar = new System.Windows.Forms.Button();
-            this.cmbSenhaEditar = new System.Windows.Forms.ComboBox();
             this.lblSenhaEditar = new System.Windows.Forms.Label();
-            this.cmbEmailEditar = new System.Windows.Forms.ComboBox();
             this.lblEmailEditar = new System.Windows.Forms.Label();
             this.txbNomeEditar = new System.Windows.Forms.TextBox();
             this.lblNomeEditar = new System.Windows.Forms.Label();
             this.lblTituloPerfil = new System.Windows.Forms.Label();
             this.dgvPerfil = new System.Windows.Forms.DataGridView();
+            this.txbEmailEditar = new System.Windows.Forms.TextBox();
+            this.txbEmailApagar = new System.Windows.Forms.TextBox();
+            this.txbSenhaEditar = new System.Windows.Forms.TextBox();
+            this.txbSenhaApagar = new System.Windows.Forms.TextBox();
             this.grbApagarPerfil.SuspendLayout();
             this.grbEditarPerfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPerfil)).BeginInit();
@@ -54,10 +54,10 @@
             // 
             // grbApagarPerfil
             // 
+            this.grbApagarPerfil.Controls.Add(this.txbSenhaApagar);
+            this.grbApagarPerfil.Controls.Add(this.txbEmailApagar);
             this.grbApagarPerfil.Controls.Add(this.btnApagar);
-            this.grbApagarPerfil.Controls.Add(this.cmbNotaApagar);
             this.grbApagarPerfil.Controls.Add(this.lblSenhaApagarP);
-            this.grbApagarPerfil.Controls.Add(this.cmbEmailApagar);
             this.grbApagarPerfil.Controls.Add(this.lblEmailApagarP);
             this.grbApagarPerfil.Controls.Add(this.txbNomeApagar);
             this.grbApagarPerfil.Controls.Add(this.lblNomeApagarP);
@@ -81,43 +81,25 @@
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = false;
             // 
-            // cmbNotaApagar
-            // 
-            this.cmbNotaApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbNotaApagar.FormattingEnabled = true;
-            this.cmbNotaApagar.Location = new System.Drawing.Point(124, 131);
-            this.cmbNotaApagar.Name = "cmbNotaApagar";
-            this.cmbNotaApagar.Size = new System.Drawing.Size(232, 28);
-            this.cmbNotaApagar.TabIndex = 5;
-            // 
             // lblSenhaApagarP
             // 
             this.lblSenhaApagarP.AutoSize = true;
             this.lblSenhaApagarP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenhaApagarP.Location = new System.Drawing.Point(62, 134);
+            this.lblSenhaApagarP.Location = new System.Drawing.Point(62, 131);
             this.lblSenhaApagarP.Name = "lblSenhaApagarP";
             this.lblSenhaApagarP.Size = new System.Drawing.Size(60, 20);
             this.lblSenhaApagarP.TabIndex = 4;
             this.lblSenhaApagarP.Text = "Senha:";
             // 
-            // cmbEmailApagar
-            // 
-            this.cmbEmailApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbEmailApagar.FormattingEnabled = true;
-            this.cmbEmailApagar.Location = new System.Drawing.Point(124, 77);
-            this.cmbEmailApagar.Name = "cmbEmailApagar";
-            this.cmbEmailApagar.Size = new System.Drawing.Size(232, 28);
-            this.cmbEmailApagar.TabIndex = 3;
-            // 
             // lblEmailApagarP
             // 
             this.lblEmailApagarP.AutoSize = true;
             this.lblEmailApagarP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmailApagarP.Location = new System.Drawing.Point(70, 80);
+            this.lblEmailApagarP.Location = new System.Drawing.Point(65, 80);
             this.lblEmailApagarP.Name = "lblEmailApagarP";
-            this.lblEmailApagarP.Size = new System.Drawing.Size(52, 20);
+            this.lblEmailApagarP.Size = new System.Drawing.Size(57, 20);
             this.lblEmailApagarP.TabIndex = 2;
-            this.lblEmailApagarP.Text = "Email:";
+            this.lblEmailApagarP.Text = "E-mail:";
             // 
             // txbNomeApagar
             // 
@@ -139,10 +121,10 @@
             // 
             // grbEditarPerfil
             // 
+            this.grbEditarPerfil.Controls.Add(this.txbSenhaEditar);
+            this.grbEditarPerfil.Controls.Add(this.txbEmailEditar);
             this.grbEditarPerfil.Controls.Add(this.btnEditar);
-            this.grbEditarPerfil.Controls.Add(this.cmbSenhaEditar);
             this.grbEditarPerfil.Controls.Add(this.lblSenhaEditar);
-            this.grbEditarPerfil.Controls.Add(this.cmbEmailEditar);
             this.grbEditarPerfil.Controls.Add(this.lblEmailEditar);
             this.grbEditarPerfil.Controls.Add(this.txbNomeEditar);
             this.grbEditarPerfil.Controls.Add(this.lblNomeEditar);
@@ -165,15 +147,7 @@
             this.btnEditar.TabIndex = 6;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
-            // 
-            // cmbSenhaEditar
-            // 
-            this.cmbSenhaEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbSenhaEditar.FormattingEnabled = true;
-            this.cmbSenhaEditar.Location = new System.Drawing.Point(124, 131);
-            this.cmbSenhaEditar.Name = "cmbSenhaEditar";
-            this.cmbSenhaEditar.Size = new System.Drawing.Size(232, 28);
-            this.cmbSenhaEditar.TabIndex = 5;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // lblSenhaEditar
             // 
@@ -184,15 +158,6 @@
             this.lblSenhaEditar.Size = new System.Drawing.Size(60, 20);
             this.lblSenhaEditar.TabIndex = 4;
             this.lblSenhaEditar.Text = "Senha:";
-            // 
-            // cmbEmailEditar
-            // 
-            this.cmbEmailEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbEmailEditar.FormattingEnabled = true;
-            this.cmbEmailEditar.Location = new System.Drawing.Point(124, 77);
-            this.cmbEmailEditar.Name = "cmbEmailEditar";
-            this.cmbEmailEditar.Size = new System.Drawing.Size(232, 28);
-            this.cmbEmailEditar.TabIndex = 3;
             // 
             // lblEmailEditar
             // 
@@ -242,6 +207,39 @@
             this.dgvPerfil.ReadOnly = true;
             this.dgvPerfil.Size = new System.Drawing.Size(1107, 263);
             this.dgvPerfil.TabIndex = 4;
+            this.dgvPerfil.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPerfil_CellClick);
+            // 
+            // txbEmailEditar
+            // 
+            this.txbEmailEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbEmailEditar.Location = new System.Drawing.Point(124, 80);
+            this.txbEmailEditar.Name = "txbEmailEditar";
+            this.txbEmailEditar.Size = new System.Drawing.Size(232, 26);
+            this.txbEmailEditar.TabIndex = 7;
+            // 
+            // txbEmailApagar
+            // 
+            this.txbEmailApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbEmailApagar.Location = new System.Drawing.Point(124, 77);
+            this.txbEmailApagar.Name = "txbEmailApagar";
+            this.txbEmailApagar.Size = new System.Drawing.Size(232, 26);
+            this.txbEmailApagar.TabIndex = 8;
+            // 
+            // txbSenhaEditar
+            // 
+            this.txbSenhaEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbSenhaEditar.Location = new System.Drawing.Point(124, 131);
+            this.txbSenhaEditar.Name = "txbSenhaEditar";
+            this.txbSenhaEditar.Size = new System.Drawing.Size(232, 26);
+            this.txbSenhaEditar.TabIndex = 8;
+            // 
+            // txbSenhaApagar
+            // 
+            this.txbSenhaApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbSenhaApagar.Location = new System.Drawing.Point(124, 128);
+            this.txbSenhaApagar.Name = "txbSenhaApagar";
+            this.txbSenhaApagar.Size = new System.Drawing.Size(232, 26);
+            this.txbSenhaApagar.TabIndex = 9;
             // 
             // Perfil
             // 
@@ -254,7 +252,9 @@
             this.Controls.Add(this.lblTituloPerfil);
             this.Controls.Add(this.dgvPerfil);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Perfil";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perfil";
             this.grbApagarPerfil.ResumeLayout(false);
             this.grbApagarPerfil.PerformLayout();
@@ -270,21 +270,21 @@
 
         private System.Windows.Forms.GroupBox grbApagarPerfil;
         private System.Windows.Forms.Button btnApagar;
-        private System.Windows.Forms.ComboBox cmbNotaApagar;
         private System.Windows.Forms.Label lblSenhaApagarP;
-        private System.Windows.Forms.ComboBox cmbEmailApagar;
         private System.Windows.Forms.Label lblEmailApagarP;
         private System.Windows.Forms.TextBox txbNomeApagar;
         private System.Windows.Forms.Label lblNomeApagarP;
         private System.Windows.Forms.GroupBox grbEditarPerfil;
         private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.ComboBox cmbSenhaEditar;
         private System.Windows.Forms.Label lblSenhaEditar;
-        private System.Windows.Forms.ComboBox cmbEmailEditar;
         private System.Windows.Forms.Label lblEmailEditar;
         private System.Windows.Forms.TextBox txbNomeEditar;
         private System.Windows.Forms.Label lblNomeEditar;
         private System.Windows.Forms.Label lblTituloPerfil;
         private System.Windows.Forms.DataGridView dgvPerfil;
+        private System.Windows.Forms.TextBox txbSenhaApagar;
+        private System.Windows.Forms.TextBox txbEmailApagar;
+        private System.Windows.Forms.TextBox txbSenhaEditar;
+        private System.Windows.Forms.TextBox txbEmailEditar;
     }
 }

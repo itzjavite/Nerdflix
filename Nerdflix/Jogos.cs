@@ -29,12 +29,12 @@ namespace Nerdflix
         }
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            if (txbTituloCadastrar.Text.Length < 2)
+            if (txbTituloCadastrar.Text.Length < 1)
             {
                 MessageBox.Show("O título deve ter no mínimo 2 caracteres.", "Erro",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (cmbNotaCadastrar.SelectedIndex == 0)
+            else if (cmbNotaCadastrar.SelectedIndex == -1)
             {
                 MessageBox.Show("Selecione uma nota!", "Erro",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -52,7 +52,7 @@ namespace Nerdflix
                     MessageBox.Show("Jogo cadastrado com sucesso!", "Show",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-
+                    AtualizarDgv();
                 }
                 else
                 {
@@ -67,7 +67,10 @@ namespace Nerdflix
         {
             int ls = dgvJogos.SelectedCells[0].RowIndex;
 
-            idSelecionado = (int)dgvJogos.Rows[ls].Cells[0].Value;
+            txbTituloApagar.Text = dgvJogos.Rows[ls].Cells[1].Value.ToString();
+
+            idSelecionado =  int.Parse(dgvJogos.Rows[ls].Cells[0].Value+"");
+
             grbApagar.Enabled = true;
         }
         public void ResetarCampos()
@@ -89,16 +92,14 @@ namespace Nerdflix
                 "Atenção!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (r == DialogResult.Yes)
             {
-                produto.Titulo = txbTituloApagar.Text;
-                produto.Nota = double.Parse(cmbNotaApagar.Text);
-
-
                 produto.Id = idSelecionado;
+                
                 if (produto.Apagar())
                 {
                     MessageBox.Show("Jogo apagado com sucesso!", "Show!",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                    AtualizarDgv();
                 }
                 else
                 {
